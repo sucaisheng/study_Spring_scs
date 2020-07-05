@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd ">
+    <bean name="user4" class="sucaisheng.pojo.User">
+        <property name="name" value="lisi"></property>
+        <property name="age" value="18"></property>
+        <property name="car" ref="car"></property>
+    </bean>
+    <bean name="car" class="sucaisheng.pojo.Car">
+        <constructor-arg name="name" value="法拉利"></constructor-arg>
+        <constructor-arg name="color" value="red"></constructor-arg>
+    </bean>
+
+</beans>
